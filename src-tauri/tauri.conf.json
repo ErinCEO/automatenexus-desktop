@@ -1,0 +1,58 @@
+{
+  "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
+  "productName": "AutomateNexus CRM",
+  "version": "1.0.0",
+  "identifier": "com.automatenexus.crm",
+  "build": {
+    "frontendDist": "https://app.automatenexuscrm.com",
+    "devUrl": "https://app.automatenexuscrm.com"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "AutomateNexus CRM",
+        "width": 1400,
+        "height": 900,
+        "minWidth": 900,
+        "minHeight": 600,
+        "resizable": true,
+        "fullscreen": false,
+        "center": true
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "category": "Business",
+    "shortDescription": "AutomateNexus CRM - Customer Relationship Management",
+    "longDescription": "AutomateNexus CRM is a comprehensive customer relationship management platform for managing contacts, deals, invoices, and workflows.",
+    "macOS": {
+      "minimumSystemVersion": "10.15"
+    },
+    "windows": {
+      "certificateThumbprint": null,
+      "digestAlgorithm": "sha256",
+      "timestampUrl": ""
+    }
+  },
+  "plugins": {
+    "updater": {
+      "endpoints": [
+        "https://app.automatenexuscrm.com/api/desktop/update/{{target}}/{{arch}}/{{current_version}}"
+      ],
+      "dialog": true,
+      "pubkey": ""
+    }
+  }
+}

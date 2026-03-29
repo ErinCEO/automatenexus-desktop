@@ -1,0 +1,16 @@
+{
+  "name": "automatenexus-desktop",
+  "version": "1.0.0",
+  "description": "AutomateNexus CRM Desktop Application",
+  "scripts": {
+    "tauri": "tauri",
+    "dev": "tauri dev",
+    "build": "tauri build"
+  },
+  "keywords": ["crm", "desktop", "automatenexus"],
+  "author": "AutomateNexus",
+  "license": "PROPRIETARY",
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.10.1"
+  }
+}
